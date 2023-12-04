@@ -1,0 +1,46 @@
+GET  http://localhost:3001/filtro1
+###
+
+Post http://localhost:3001/estado
+content-type: application/json
+
+[
+{"StatusUsuario":"APED","descripcion":"Asignada a Pedido"},
+{"StatusUsuario":"ASOL","descripcion":"Anomalía Solucionada"},
+{"StatusUsuario":"CREA","descripcion":"Anomalía Solucionada"},
+{"StatusUsuario":"MW01","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"MW02","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"NORE","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"NOTS","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"PACA","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"PAFM","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"PAIC","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"PAIN","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"PAPC","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"PLAN","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"RACC","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"RACD","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"RADA","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"RADP","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"RAFP","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"RAFT","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"RAME","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"RANC","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"RANP","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"RANU","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"RATC","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"RATE","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"RAUV","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"REAB","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"REAL","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"RXIC","descripcion":"Creada y asignada por sistema"},
+{"StatusUsuario":"ZNLI","descripcion":"Creada y asignada por sistema"}]
+
+
+###
+POST http://localhost:3001/asignarPermisos
+content-type: application/json
+
+{"Hola":"hola"}
+###
+GET http://localhost:3001/getdatos?zona=General%20Paz
